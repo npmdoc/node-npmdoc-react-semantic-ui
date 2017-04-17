@@ -1,0 +1,1124 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/jhudson8/react-semantic-ui"
+
+    >react-semantic-ui (v0.2.0)</a>
+</h1>
+<h4>semantic-ui components build for React</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-semantic-ui">module react-semantic-ui</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-semantic-ui.react-semantic-ui">
+            function <span class="apidocSignatureSpan"></span>react-semantic-ui
+            <span class="apidocSignatureSpan">(React)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-semantic-ui.form">
+            function <span class="apidocSignatureSpan">react-semantic-ui.</span>form
+            <span class="apidocSignatureSpan">(React, common)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-semantic-ui.input">
+            function <span class="apidocSignatureSpan">react-semantic-ui.</span>input
+            <span class="apidocSignatureSpan">(React, form, common)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-semantic-ui.layout">
+            function <span class="apidocSignatureSpan">react-semantic-ui.</span>layout
+            <span class="apidocSignatureSpan">(React, common)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-semantic-ui.toString">
+            function <span class="apidocSignatureSpan">react-semantic-ui.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-semantic-ui.form">module react-semantic-ui.form</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-semantic-ui.form.form">
+            function <span class="apidocSignatureSpan">react-semantic-ui.</span>form
+            <span class="apidocSignatureSpan">(React, common)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-semantic-ui.input">module react-semantic-ui.input</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-semantic-ui.input.input">
+            function <span class="apidocSignatureSpan">react-semantic-ui.</span>input
+            <span class="apidocSignatureSpan">(React, form, common)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-semantic-ui.layout">module react-semantic-ui.layout</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-semantic-ui.layout.layout">
+            function <span class="apidocSignatureSpan">react-semantic-ui.</span>layout
+            <span class="apidocSignatureSpan">(React, common)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-semantic-ui.toString">module react-semantic-ui.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-semantic-ui.toString.toString">
+            function <span class="apidocSignatureSpan">react-semantic-ui.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-semantic-ui" id="apidoc.module.react-semantic-ui">module react-semantic-ui</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-semantic-ui.react-semantic-ui" id="apidoc.element.react-semantic-ui.react-semantic-ui">
+        function <span class="apidocSignatureSpan"></span>react-semantic-ui
+        <span class="apidocSignatureSpan">(React)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function lib(React) {
+  var common = require(&#x27;./lib/common&#x27;)(React),
+      form = require(&#x27;./lib/form&#x27;)(React, common);
+  return {
+    form: form,
+    input: require(&#x27;./lib/input&#x27;)(React, form, common),
+    layout: require(&#x27;./lib/layout&#x27;)(React, common)
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-semantic-ui.form" id="apidoc.element.react-semantic-ui.form">
+        function <span class="apidocSignatureSpan">react-semantic-ui.</span>form
+        <span class="apidocSignatureSpan">(React, common)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">form = function (React, common) {
+  var exports = {
+
+    errorRenderer: function(error, children) {
+      children.push(React.DOM.div({className: &#x27;ui red pointing top ui label&#x27;}, error));
+    },
+
+    // apply an icon to a button
+    applyIcon: function(context) {
+      var _children = [];
+      _children.push(React.DOM.i({className: &#x27;icon &#x27; + context.icon}));
+      React.Children.forEach(context.children, function(child) {
+        _children.push(child);
+      });
+      context.children = _children;
+    },
+
+    // apply a loading state to a button
+    applyLoadingState: function(context) {
+      context.icon = &#x27;loading&#x27;;
+      context.disabled = true;
+      if (this.props.loadingMessage) {
+        context.children = this.props.loadingMessage;
+      }
+    },
+
+    fieldRenderer: function() {
+      var props = this.props,
+          state = this.state || {},
+          className = common.mergeClassNames(&#x27;field&#x27;, this._controlClassName &#x26;&#x26; this._controlClassName()),
+          id = this.props.id;
+          labelAfter = props.labelAfter !== undefined ? props.labelAfter : this.defaultLabelAfter,
+          inlineLabel = props.inlineLabel !== undefined ? props.inlineLabel : this.defaultInlineLabel,
+          containerClass = common.mergeClassNames(
+            props.containerClass, this.defaultContainerClass &#x26;&#x26; this.defaultContainerClass()),
+          inputFieldProps = common.omit(props, [&#x27;label&#x27;, &#x27;disabled&#x27;, &#x27;fieldClass&#x27;, &#x27;value&#x27;]),
+          error = props.error || state.error;
+
+      if (error) {
+        className = common.mergeClassNames(className, &#x27;error&#x27;);
+      }
+      if (this.props.disabled) {
+        className = common.mergeClassNames(className, &#x27;disabled&#x27;);
+      }
+      if (props.fieldClass) {
+        className = common.mergeClassNames(props.fieldClass, className);
+      }
+      if (props.label &#x26;&#x26; !id) {
+        id = common.uniqueId();
+      }
+      if (state.loading || props.loading) {
+        containerClass = common.mergeClassNames(containerClass, &#x27;loading&#x27;);
+      }
+
+      inputFieldProps.id = id;
+      inputFieldProps.defaultDisabled = this.props.disabled;
+      if (this.modifyInputFieldProps) {
+        inputFieldProps = this.modifyInputFieldProps(inputFieldProps);
+      }
+
+      var inputField = this.renderInput(inputFieldProps),
+          label = props.label ? React.DOM.label({htmlFor: id}, props.label) : undefined,
+          fieldChildren = [],
+          containerChildren = [];
+
+      if (containerClass) {
+        containerChildren.push(inputField);
+        if (inlineLabel &#x26;&#x26; label) {
+          containerChildren.splice(labelAfter?1:0, 0, label);
+          label = undefined;
+        }
+        if (error) {
+          if (this.errorRenderer) {
+            this.errorRenderer(error, containerChildren);
+          } else {
+            exports.errorRenderer.call(this, error, containerChildren);
+          }
+        }
+        var container = React.DOM.div({className: containerClass}, containerChildren);
+        if (label) {
+          fieldChildren.push(container);
+        } else {
+          return container;
+        }
+      } else if (!label) {
+        return inputField;
+      } else {
+        fieldChildren.push(inputField);
+        if (error) {
+          if (this.errorRenderer) {
+            this.errorRenderer(error, fieldChildren);
+          } else {
+            exports.errorRenderer.call(this, error, fieldChildren);
+          }
+        }
+      }
+      if (label) {
+        fieldChildren.splice(labelAfter ? 1 : 0, 0, label);
+      }
+      return React.DOM.div({className: className}, fieldChildren);
+    }
+  };
+
+  var classData = {
+
+    /*** Form
+     * A form control which reacts to a loading state
+     *
+     * Properties
+     * ----------
+     * - ***loading***: true if the form is in a loading state
+     * - ***className***: additional form class name (&#x22;ui form segment&#x22;) will already be applied
+     *
+     * Overrides
+     * ---------
+     * - ***mixins.Form***: default mixins that should be applied
+     *
+     * Example
+     * --------
+     *     var Form = rsui.form.Form;
+     *     &#x3c;Form className=&#x22;my-class&#x22; loading={isLoading} ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Form: {
+  render: function() {
+    var props = this.props,
+        loading = props.loading || this.state &#x26;&#x26; this.state.loading;
+        attributes = common.defaults({
+          className: common.mergeClassNames(&#x27;ui form&#x27;, this._className, props.className, loading &#x26;&#x26; &#x27;loading
+&#x27;)
+        }, this.props);
+    return React.DOM.<span class="apidocCodeKeywordSpan">form</span>(attributes, props.children);
+  }
+},
+
+/*** Control
+ * Form field control meant to provide a label and additon field wrapper elements to
+ * arbitrary nested content
+ *
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-semantic-ui.input" id="apidoc.element.react-semantic-ui.input">
+        function <span class="apidocSignatureSpan">react-semantic-ui.</span>input
+        <span class="apidocSignatureSpan">(React, form, common)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">input = function (React, form, common) {
+
+  function getDefaultValue(self, props) {
+    return props.defaultValue || self.getModelValue();
+  }
+
+  React.mixins.add(&#x27;modelValueAccessor&#x27;, {
+    getModelValue: function() {
+      return this.state &#x26;&#x26; this.state.value || this.props.value;
+    },
+    setModelValue: function(value) {
+      this.setState({value: value});
+    }
+  });
+
+  var exports = {
+    mixins: {all: [&#x27;modelValueAccessor&#x27;]},
+
+    optionsRetriever: function(defaultValue) {
+      var rtn = (this.props.options || []).map(function(item) {
+        var label, value, selected;
+        if (typeof item === &#x27;string&#x27;) {
+          selected = defaultValue === item;
+          value = item;
+          label = item;
+        } else {
+          selected = defaultValue === item.value;
+          value = item.value;
+          label = item.label;
+        }
+        return {value: value, label: label, selected: selected};
+      });
+      if (this.props.placeholder) {
+        rtn.splice(0, 0, {value: &#x27;&#x27;, label: this.props.placeholder});
+      }
+      return rtn;
+    }
+  };
+
+  var classData = {
+
+<span class="apidocCodeCommentSpan">    /*** Text
+     * Standard text field that can display a label and optional field wrapper
+     *
+     * Properties
+     * ----------
+     * - ***type***: the input type (&#x22;text&#x22; by default)
+     * - ***value***: the field value
+     * - ***name***: the field name
+     *
+     * *other component attributes will be copied to the input field attributes*
+     *
+     * *see additional properties from [Field Control](../form/Control.md)*
+     *
+     * Overrides
+     * ---------
+     * - ***mixins.Text***: default mixins that should be applied
+     *
+     * *see [overrides](./overrides.md)*
+     *
+     * Example
+     * --------
+     *     var Text = rsui.input.Text;
+     *     &#x3c;Text label=&#x22;Foo&#x22; defaultValue=&#x22;bar&#x22;&#x3e; ... &#x3c;/Text&#x3e;
+     ***/
+</span>    Text: {
+      renderInput: function(props) {
+        props.type = props.type || &#x27;text&#x27;;
+        props.defaultValue = getDefaultValue(this, props);
+        props.className = common.mergeClassNames(props.className, this._className);
+        return React.DOM.input(props);
+      }
+    },
+
+    /*** TextArea
+     * Standard textarea field that can display a label and optional field wrapper
+     *
+     * Properties
+     * ----------
+     * - ***value***: the field value
+     * - ***name***: the field name
+     *
+     * *other component attributes will be copied to the input field attributes*
+     *
+     * *see additional properties from [Field Control](../form/Control.md)*
+     *
+     * Overrides
+     * ---------
+     * - ***mixins.Text***: default mixins that should be applied
+     *
+     * *see [overrides](./overrides.md)*
+     *
+     * Example
+     * --------
+     *     var Text = rsui.input.Text;
+     *     &#x3c;TextArea label=&#x22;Foo&#x22; defaultValue=&#x22;bar&#x22;&#x3e; ... &#x3c;/TextArea&#x3e;
+     ***/
+    TextArea: {
+      renderInput: function(props) {
+        props.defaultValue = getDefaultValue(this, props);
+        props.className = common.mergeClassNames(props.className, this._className);
+        return React.DOM.textarea(props);
+      }
+    },
+
+    /*** Select
+     * Standard select field that can display a label and optional field wrapper.
+     * A [fancier control](./Dropdown.md) can be used as well.
+     *
+     * Properties
+     * ----------
+     * - ***options***: the available options list (by default can be array of strings, or array of {value, label})
+     * - ***value***: the field value
+     * - ***name***: the field name
+     *
+     * *other component attributes will be copied to the input field attributes*
+     *
+     * *see additional properties from [Field Control](../form/Control.md)*
+     *
+     * Overrides
+     * ---------
+     * - ***mixins.Select***: default mixins that should be applied
+     * ```optionsRetriever```
+     *
+     * *see [overrides](./overrides.md)*
+     *
+     * Example
+     * --------
+     *      var Select = rsui.input.Select;
+     *      &#x3c;Select label=&#x22;Foo&#x22; defaultValue=&#x22;abc&#x22; options={[{value: &#x27;1&#x27;, label: &#x27;One&#x27;}, {value: &#x27;2&#x27;, label: &#x27;Two&#x27;}]}/&#x3e;
+     ***/
+    Select: {
+      defaultContainerClass: function() { ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *     &#x3c;Text label=&#x22;Foo&#x22; defaultValue=&#x22;bar&#x22;&#x3e; ... &#x3c;/Text&#x3e;
+ ***/
+Text: {
+  renderInput: function(props) {
+    props.type = props.type || &#x27;text&#x27;;
+    props.defaultValue = getDefaultValue(this, props);
+    props.className = common.mergeClassNames(props.className, this._className);
+    return React.DOM.<span class="apidocCodeKeywordSpan">input</span>(props);
+  }
+},
+
+/*** TextArea
+ * Standard textarea field that can display a label and optional field wrapper
+ *
+ * Properties
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-semantic-ui.layout" id="apidoc.element.react-semantic-ui.layout">
+        function <span class="apidocSignatureSpan">react-semantic-ui.</span>layout
+        <span class="apidocSignatureSpan">(React, common)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">layout = function (React, common) {
+  var exports = {
+    totalPageRetriever: function() {
+      return this.props.totalPages;
+    },
+
+    valueRetriever: function(column, entry) {
+      if (entry.get) {
+        return entry.get(column.key);
+      }
+      return entry[column.key];
+    },
+
+    keyRetriever: function(entry) {
+      return entry.id || entry.key;
+    },
+
+    entriesRetriever: function(entries) {
+      if (entries.models) {
+        return entries.models;
+      }
+      return entries;
+    }
+  };
+
+  var classData = {
+
+    Loader: {
+      render: function() {
+        var props = this.props,
+            loading = this.state &#x26;&#x26; this.state.loading || props.loading;
+
+        if (this.props.loading || this.state &#x26;&#x26; this.state.loading) {
+          var className = common.mergeClassNames(&#x27;ui&#x27;, &#x27;segment&#x27;, props.className);
+              loadingClass = common.mergeClassNames(&#x27;ui active&#x27;, props.type || &#x27;inverted dimmer&#x27;);
+          return React.DOM.div({className: className},
+                  React.DOM.div({className: loadingClass},
+                    React.DOM.div({className: &#x27;ui loader&#x27; + (props.label ? &#x27; text&#x27; : &#x27;&#x27;)}, props.label)),
+                  this.props.children);
+        } else {
+          return React.DOM.div({className: props.className}, this.props.children);
+        }
+      }
+    },
+
+
+    Steps: {
+      getInitialState: function() {
+        return {
+          active: this.props.active || this.props.steps[0].key
+        };
+      },
+      render: function() {
+        var self = this,
+            props = this.props,
+            className = common.mergeClassNames(&#x27;ui steps&#x27;, props.type, props.className),
+            activeStep = this.state.active,
+            children = props.steps.map(function(step) {
+              var className = common.mergeClassNames(&#x27;ui step&#x27;, step.key === activeStep ? &#x27;active&#x27; : undefined, step.disabled ? &#x27;
+disabled&#x27; : undefined);
+              return React.DOM.div({className: className, onClick: self.clicker(step)}, step.label);
+            });
+        return React.DOM.div({className: className}, children);
+      },
+      clicker: function(step) {
+        var self = this;
+        return function() {
+          if (!step.disabled) {
+            var rtn = self.props.onChange &#x26;&#x26; self.props.onChange(step);
+            if (rtn === undefined || rtn) {
+              self.setState({active: step.key});
+            }
+          }
+        };
+      }
+    },
+
+
+<span class="apidocCodeCommentSpan">    /*** Paginator
+     * A paginator component.
+     *
+     * Properties
+     * ----------
+     * - ***totalPages***: the number of total pages
+     * - ***className***: additional top level class name
+     * - ***page***: (default: 1) the current page number (1-based)
+     * - ***radius***: (default: 1) the number of page links (moving out from current page) to show
+     * - ***anchor***: (default: 1) the number of page links (moving out from each end) to show
+     * - ***onChange***: called when the user clicked a page number
+     *
+     * Example
+     * ---------
+     *     &#x3c;Paginator page={2} totalPages={12} onChange={funtion(pageNumber) {...}}/&#x3e;
+     ***/
+</span>    Paginator: {
+      getInitialState: function() {
+        return {
+          page: this.props.page || 1
+        };
+      },
+
+      render: function() {
+        var totalPages = exports.totalPageRetriever.call(this);
+        if (totalPages &#x26;&#x26; totalPages &#x3e; 1) {
+          var current = this.state.page,
+              radius = this.props.radius || 0,
+              anchor = this.props.anchor || 1,
+              separator = this.props.separator || &#x27;...&#x27;,
+              min = Math.max(current - radius, 1),
+              max = Math.min(current + radius, totalPages),
+              showArrows = this.props.showArrows === undefined ? true : this.props.showArrows,
+              totalShowing = (radius * 2) + (anchor * 2) + 3 /* current + separator */,
+              showRightSeparator = (totalPages &#x3e; current + radius + anchor),
+              showLeftSeparator = (current  &#x3e; (anchor + Math.max(1, radius))),
+              compact = this.props.compact,
+              index = {},
+              children = []; ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-semantic-ui.toString" id="apidoc.element.react-semantic-ui.toString">
+        function <span class="apidocSignatureSpan">react-semantic-ui.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-semantic-ui.form" id="apidoc.module.react-semantic-ui.form">module react-semantic-ui.form</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-semantic-ui.form.form" id="apidoc.element.react-semantic-ui.form.form">
+        function <span class="apidocSignatureSpan">react-semantic-ui.</span>form
+        <span class="apidocSignatureSpan">(React, common)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">form = function (React, common) {
+  var exports = {
+
+    errorRenderer: function(error, children) {
+      children.push(React.DOM.div({className: &#x27;ui red pointing top ui label&#x27;}, error));
+    },
+
+    // apply an icon to a button
+    applyIcon: function(context) {
+      var _children = [];
+      _children.push(React.DOM.i({className: &#x27;icon &#x27; + context.icon}));
+      React.Children.forEach(context.children, function(child) {
+        _children.push(child);
+      });
+      context.children = _children;
+    },
+
+    // apply a loading state to a button
+    applyLoadingState: function(context) {
+      context.icon = &#x27;loading&#x27;;
+      context.disabled = true;
+      if (this.props.loadingMessage) {
+        context.children = this.props.loadingMessage;
+      }
+    },
+
+    fieldRenderer: function() {
+      var props = this.props,
+          state = this.state || {},
+          className = common.mergeClassNames(&#x27;field&#x27;, this._controlClassName &#x26;&#x26; this._controlClassName()),
+          id = this.props.id;
+          labelAfter = props.labelAfter !== undefined ? props.labelAfter : this.defaultLabelAfter,
+          inlineLabel = props.inlineLabel !== undefined ? props.inlineLabel : this.defaultInlineLabel,
+          containerClass = common.mergeClassNames(
+            props.containerClass, this.defaultContainerClass &#x26;&#x26; this.defaultContainerClass()),
+          inputFieldProps = common.omit(props, [&#x27;label&#x27;, &#x27;disabled&#x27;, &#x27;fieldClass&#x27;, &#x27;value&#x27;]),
+          error = props.error || state.error;
+
+      if (error) {
+        className = common.mergeClassNames(className, &#x27;error&#x27;);
+      }
+      if (this.props.disabled) {
+        className = common.mergeClassNames(className, &#x27;disabled&#x27;);
+      }
+      if (props.fieldClass) {
+        className = common.mergeClassNames(props.fieldClass, className);
+      }
+      if (props.label &#x26;&#x26; !id) {
+        id = common.uniqueId();
+      }
+      if (state.loading || props.loading) {
+        containerClass = common.mergeClassNames(containerClass, &#x27;loading&#x27;);
+      }
+
+      inputFieldProps.id = id;
+      inputFieldProps.defaultDisabled = this.props.disabled;
+      if (this.modifyInputFieldProps) {
+        inputFieldProps = this.modifyInputFieldProps(inputFieldProps);
+      }
+
+      var inputField = this.renderInput(inputFieldProps),
+          label = props.label ? React.DOM.label({htmlFor: id}, props.label) : undefined,
+          fieldChildren = [],
+          containerChildren = [];
+
+      if (containerClass) {
+        containerChildren.push(inputField);
+        if (inlineLabel &#x26;&#x26; label) {
+          containerChildren.splice(labelAfter?1:0, 0, label);
+          label = undefined;
+        }
+        if (error) {
+          if (this.errorRenderer) {
+            this.errorRenderer(error, containerChildren);
+          } else {
+            exports.errorRenderer.call(this, error, containerChildren);
+          }
+        }
+        var container = React.DOM.div({className: containerClass}, containerChildren);
+        if (label) {
+          fieldChildren.push(container);
+        } else {
+          return container;
+        }
+      } else if (!label) {
+        return inputField;
+      } else {
+        fieldChildren.push(inputField);
+        if (error) {
+          if (this.errorRenderer) {
+            this.errorRenderer(error, fieldChildren);
+          } else {
+            exports.errorRenderer.call(this, error, fieldChildren);
+          }
+        }
+      }
+      if (label) {
+        fieldChildren.splice(labelAfter ? 1 : 0, 0, label);
+      }
+      return React.DOM.div({className: className}, fieldChildren);
+    }
+  };
+
+  var classData = {
+
+    /*** Form
+     * A form control which reacts to a loading state
+     *
+     * Properties
+     * ----------
+     * - ***loading***: true if the form is in a loading state
+     * - ***className***: additional form class name (&#x22;ui form segment&#x22;) will already be applied
+     *
+     * Overrides
+     * ---------
+     * - ***mixins.Form***: default mixins that should be applied
+     *
+     * Example
+     * --------
+     *     var Form = rsui.form.Form;
+     *     &#x3c;Form className=&#x22;my-class&#x22; loading={isLoading} ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Form: {
+  render: function() {
+    var props = this.props,
+        loading = props.loading || this.state &#x26;&#x26; this.state.loading;
+        attributes = common.defaults({
+          className: common.mergeClassNames(&#x27;ui form&#x27;, this._className, props.className, loading &#x26;&#x26; &#x27;loading
+&#x27;)
+        }, this.props);
+    return React.DOM.<span class="apidocCodeKeywordSpan">form</span>(attributes, props.children);
+  }
+},
+
+/*** Control
+ * Form field control meant to provide a label and additon field wrapper elements to
+ * arbitrary nested content
+ *
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-semantic-ui.input" id="apidoc.module.react-semantic-ui.input">module react-semantic-ui.input</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-semantic-ui.input.input" id="apidoc.element.react-semantic-ui.input.input">
+        function <span class="apidocSignatureSpan">react-semantic-ui.</span>input
+        <span class="apidocSignatureSpan">(React, form, common)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">input = function (React, form, common) {
+
+  function getDefaultValue(self, props) {
+    return props.defaultValue || self.getModelValue();
+  }
+
+  React.mixins.add(&#x27;modelValueAccessor&#x27;, {
+    getModelValue: function() {
+      return this.state &#x26;&#x26; this.state.value || this.props.value;
+    },
+    setModelValue: function(value) {
+      this.setState({value: value});
+    }
+  });
+
+  var exports = {
+    mixins: {all: [&#x27;modelValueAccessor&#x27;]},
+
+    optionsRetriever: function(defaultValue) {
+      var rtn = (this.props.options || []).map(function(item) {
+        var label, value, selected;
+        if (typeof item === &#x27;string&#x27;) {
+          selected = defaultValue === item;
+          value = item;
+          label = item;
+        } else {
+          selected = defaultValue === item.value;
+          value = item.value;
+          label = item.label;
+        }
+        return {value: value, label: label, selected: selected};
+      });
+      if (this.props.placeholder) {
+        rtn.splice(0, 0, {value: &#x27;&#x27;, label: this.props.placeholder});
+      }
+      return rtn;
+    }
+  };
+
+  var classData = {
+
+<span class="apidocCodeCommentSpan">    /*** Text
+     * Standard text field that can display a label and optional field wrapper
+     *
+     * Properties
+     * ----------
+     * - ***type***: the input type (&#x22;text&#x22; by default)
+     * - ***value***: the field value
+     * - ***name***: the field name
+     *
+     * *other component attributes will be copied to the input field attributes*
+     *
+     * *see additional properties from [Field Control](../form/Control.md)*
+     *
+     * Overrides
+     * ---------
+     * - ***mixins.Text***: default mixins that should be applied
+     *
+     * *see [overrides](./overrides.md)*
+     *
+     * Example
+     * --------
+     *     var Text = rsui.input.Text;
+     *     &#x3c;Text label=&#x22;Foo&#x22; defaultValue=&#x22;bar&#x22;&#x3e; ... &#x3c;/Text&#x3e;
+     ***/
+</span>    Text: {
+      renderInput: function(props) {
+        props.type = props.type || &#x27;text&#x27;;
+        props.defaultValue = getDefaultValue(this, props);
+        props.className = common.mergeClassNames(props.className, this._className);
+        return React.DOM.input(props);
+      }
+    },
+
+    /*** TextArea
+     * Standard textarea field that can display a label and optional field wrapper
+     *
+     * Properties
+     * ----------
+     * - ***value***: the field value
+     * - ***name***: the field name
+     *
+     * *other component attributes will be copied to the input field attributes*
+     *
+     * *see additional properties from [Field Control](../form/Control.md)*
+     *
+     * Overrides
+     * ---------
+     * - ***mixins.Text***: default mixins that should be applied
+     *
+     * *see [overrides](./overrides.md)*
+     *
+     * Example
+     * --------
+     *     var Text = rsui.input.Text;
+     *     &#x3c;TextArea label=&#x22;Foo&#x22; defaultValue=&#x22;bar&#x22;&#x3e; ... &#x3c;/TextArea&#x3e;
+     ***/
+    TextArea: {
+      renderInput: function(props) {
+        props.defaultValue = getDefaultValue(this, props);
+        props.className = common.mergeClassNames(props.className, this._className);
+        return React.DOM.textarea(props);
+      }
+    },
+
+    /*** Select
+     * Standard select field that can display a label and optional field wrapper.
+     * A [fancier control](./Dropdown.md) can be used as well.
+     *
+     * Properties
+     * ----------
+     * - ***options***: the available options list (by default can be array of strings, or array of {value, label})
+     * - ***value***: the field value
+     * - ***name***: the field name
+     *
+     * *other component attributes will be copied to the input field attributes*
+     *
+     * *see additional properties from [Field Control](../form/Control.md)*
+     *
+     * Overrides
+     * ---------
+     * - ***mixins.Select***: default mixins that should be applied
+     * ```optionsRetriever```
+     *
+     * *see [overrides](./overrides.md)*
+     *
+     * Example
+     * --------
+     *      var Select = rsui.input.Select;
+     *      &#x3c;Select label=&#x22;Foo&#x22; defaultValue=&#x22;abc&#x22; options={[{value: &#x27;1&#x27;, label: &#x27;One&#x27;}, {value: &#x27;2&#x27;, label: &#x27;Two&#x27;}]}/&#x3e;
+     ***/
+    Select: {
+      defaultContainerClass: function() { ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *     &#x3c;Text label=&#x22;Foo&#x22; defaultValue=&#x22;bar&#x22;&#x3e; ... &#x3c;/Text&#x3e;
+ ***/
+Text: {
+  renderInput: function(props) {
+    props.type = props.type || &#x27;text&#x27;;
+    props.defaultValue = getDefaultValue(this, props);
+    props.className = common.mergeClassNames(props.className, this._className);
+    return React.DOM.<span class="apidocCodeKeywordSpan">input</span>(props);
+  }
+},
+
+/*** TextArea
+ * Standard textarea field that can display a label and optional field wrapper
+ *
+ * Properties
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-semantic-ui.layout" id="apidoc.module.react-semantic-ui.layout">module react-semantic-ui.layout</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-semantic-ui.layout.layout" id="apidoc.element.react-semantic-ui.layout.layout">
+        function <span class="apidocSignatureSpan">react-semantic-ui.</span>layout
+        <span class="apidocSignatureSpan">(React, common)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">layout = function (React, common) {
+  var exports = {
+    totalPageRetriever: function() {
+      return this.props.totalPages;
+    },
+
+    valueRetriever: function(column, entry) {
+      if (entry.get) {
+        return entry.get(column.key);
+      }
+      return entry[column.key];
+    },
+
+    keyRetriever: function(entry) {
+      return entry.id || entry.key;
+    },
+
+    entriesRetriever: function(entries) {
+      if (entries.models) {
+        return entries.models;
+      }
+      return entries;
+    }
+  };
+
+  var classData = {
+
+    Loader: {
+      render: function() {
+        var props = this.props,
+            loading = this.state &#x26;&#x26; this.state.loading || props.loading;
+
+        if (this.props.loading || this.state &#x26;&#x26; this.state.loading) {
+          var className = common.mergeClassNames(&#x27;ui&#x27;, &#x27;segment&#x27;, props.className);
+              loadingClass = common.mergeClassNames(&#x27;ui active&#x27;, props.type || &#x27;inverted dimmer&#x27;);
+          return React.DOM.div({className: className},
+                  React.DOM.div({className: loadingClass},
+                    React.DOM.div({className: &#x27;ui loader&#x27; + (props.label ? &#x27; text&#x27; : &#x27;&#x27;)}, props.label)),
+                  this.props.children);
+        } else {
+          return React.DOM.div({className: props.className}, this.props.children);
+        }
+      }
+    },
+
+
+    Steps: {
+      getInitialState: function() {
+        return {
+          active: this.props.active || this.props.steps[0].key
+        };
+      },
+      render: function() {
+        var self = this,
+            props = this.props,
+            className = common.mergeClassNames(&#x27;ui steps&#x27;, props.type, props.className),
+            activeStep = this.state.active,
+            children = props.steps.map(function(step) {
+              var className = common.mergeClassNames(&#x27;ui step&#x27;, step.key === activeStep ? &#x27;active&#x27; : undefined, step.disabled ? &#x27;
+disabled&#x27; : undefined);
+              return React.DOM.div({className: className, onClick: self.clicker(step)}, step.label);
+            });
+        return React.DOM.div({className: className}, children);
+      },
+      clicker: function(step) {
+        var self = this;
+        return function() {
+          if (!step.disabled) {
+            var rtn = self.props.onChange &#x26;&#x26; self.props.onChange(step);
+            if (rtn === undefined || rtn) {
+              self.setState({active: step.key});
+            }
+          }
+        };
+      }
+    },
+
+
+<span class="apidocCodeCommentSpan">    /*** Paginator
+     * A paginator component.
+     *
+     * Properties
+     * ----------
+     * - ***totalPages***: the number of total pages
+     * - ***className***: additional top level class name
+     * - ***page***: (default: 1) the current page number (1-based)
+     * - ***radius***: (default: 1) the number of page links (moving out from current page) to show
+     * - ***anchor***: (default: 1) the number of page links (moving out from each end) to show
+     * - ***onChange***: called when the user clicked a page number
+     *
+     * Example
+     * ---------
+     *     &#x3c;Paginator page={2} totalPages={12} onChange={funtion(pageNumber) {...}}/&#x3e;
+     ***/
+</span>    Paginator: {
+      getInitialState: function() {
+        return {
+          page: this.props.page || 1
+        };
+      },
+
+      render: function() {
+        var totalPages = exports.totalPageRetriever.call(this);
+        if (totalPages &#x26;&#x26; totalPages &#x3e; 1) {
+          var current = this.state.page,
+              radius = this.props.radius || 0,
+              anchor = this.props.anchor || 1,
+              separator = this.props.separator || &#x27;...&#x27;,
+              min = Math.max(current - radius, 1),
+              max = Math.min(current + radius, totalPages),
+              showArrows = this.props.showArrows === undefined ? true : this.props.showArrows,
+              totalShowing = (radius * 2) + (anchor * 2) + 3 /* current + separator */,
+              showRightSeparator = (totalPages &#x3e; current + radius + anchor),
+              showLeftSeparator = (current  &#x3e; (anchor + Math.max(1, radius))),
+              compact = this.props.compact,
+              index = {},
+              children = []; ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-semantic-ui.toString" id="apidoc.module.react-semantic-ui.toString">module react-semantic-ui.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-semantic-ui.toString.toString" id="apidoc.element.react-semantic-ui.toString.toString">
+        function <span class="apidocSignatureSpan">react-semantic-ui.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>

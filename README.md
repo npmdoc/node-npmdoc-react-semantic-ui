@@ -1,4 +1,7 @@
-# api documentation for  [react-semantic-ui (v0.2.0)](https://github.com/jhudson8/react-semantic-ui)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-semantic-ui.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-semantic-ui) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-semantic-ui.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-semantic-ui)
+# npmdoc-react-semantic-ui
+
+#### basic api documentation for  [react-semantic-ui (v0.2.0)](https://github.com/jhudson8/react-semantic-ui)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-semantic-ui.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-semantic-ui) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-semantic-ui.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-semantic-ui)
+
 #### semantic-ui components build for React
 
 [![NPM](https://nodei.co/npm/react-semantic-ui.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-semantic-ui)
@@ -64,7 +67,8 @@
         "type": "git",
         "url": "git+https://github.com/jhudson8/react-semantic-ui.git"
     },
-    "version": "0.2.0"
+    "version": "0.2.0",
+    "bin": {}
 }
 ```
 
